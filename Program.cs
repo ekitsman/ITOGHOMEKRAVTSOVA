@@ -7,3 +7,15 @@
 string[] array = new string[4] {"1234", "1567", "-2", "computer science"};
 string[] arraynew = new string[array.Length];
 
+void SecondArray(string[] array, string[] arraynew)
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+    if(array[i].Length <= 3)
+        {
+        arraynew[count] = array[i];
+        count++;
+        }
+    }
+}
